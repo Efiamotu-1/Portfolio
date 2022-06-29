@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+  
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+  background-color: #e5e5e5;
+}
+
+
+/* For Mobile */
+
+@media (max-width : 768px) {
+      
+.header {
+  background-color: #3C3A39;
+  /* width: 375px; */
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-top: 20px;
+}
+      
+.logo {
+  color: white;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+      
+.menu-icon-container {
+  margin-right: 20px;
+  width: 18px;
+  color: white;
+}
+
+.headline-section {
+  background-color: #1C1A19;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.headline-section-background {
+
+  position: absolute;
+  bottom: -130px;
+  right: 0; 
+  height: 500px;
+}
+
+.my-information {
+  padding: 0 20px;
+  color: white;
+  margin: 10px 0;
+  
+}
+
+.my-information h1{
+  color: #FF6B00;
+  font-family: 'Crete Round', serif;
+  padding-top: 124px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+}
+
+.my-information h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.my-information p{
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 10px;  
+  width: 250px;
+  height: 40px;
+}
+
+
+}
