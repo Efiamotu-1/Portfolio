@@ -2,7 +2,7 @@
 
 # Project Name
 
-Portfolio Mobile Version
+Portfolio 
 
 > Description the project.
 This is my portfolio website which shows my various projects and showcases my skillsets and mastery of web development. it is created with html, css and javascript and is also mobile responsive.
