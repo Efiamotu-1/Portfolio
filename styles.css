@@ -177,6 +177,10 @@ body {
   
 }
 
+.recent-works a {
+  color: #fff;
+}
+
 .works-categories {
   display: flex;
   gap: 10px;
@@ -291,6 +295,10 @@ body {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.about a {
   color: #fff;
 }
 
