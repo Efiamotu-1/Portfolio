@@ -163,21 +163,37 @@ body {
   margin: 10px 0;
 }
 
-.recent-works button {
-  background: #F55800;
-  color: #fff;
+.btn {
   padding: 12px;
-  margin: 10px 0;
+  background: #FF6B00;
   border: none;
-  font-family: 'Inter' , sans-serif;
-  font-style: normal;
+  margin-top: 10px ;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 
-.recent-works a {
+.btn:hover {
+  background: #F55800;
+  color: #F55800;
+}
+
+.btn:active {
+  background: #E05304;
+  color: #fff;
+}
+
+.btn:disabled {
+  color: #5B5957;
+  background: #F4F1F0;
+}
+
+.btn:enabled {
+  background: #F55800;
   color: #fff;
 }
 
@@ -190,8 +206,6 @@ body {
   padding: 10px 12px;
   border: 1px solid #8993A4;
 }
-
-
 
 .first-project {
   background-image: url(images/card-bg.png);
@@ -285,24 +299,13 @@ body {
 }
 
 .about button {
-  padding: 12px;
-  background: #FF6B00;
-  border: none;
-  margin: 10px 20px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
+  margin-left: 20px;
 }
+
 
 .about a {
   color: #fff;
 }
-
-
 
 .about-me-img {
   background-image: url(images/illustration-about-me-mobile.png);
