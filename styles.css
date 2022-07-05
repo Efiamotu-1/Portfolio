@@ -416,6 +416,7 @@ margin: 10px 10px;
 .footer-links {
   display: flex;
   justify-content: center;
+  filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
 }
 
 .footer-links ul li {
