@@ -175,6 +175,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -364,7 +365,7 @@ body {
 }
 
 .contact-me h1 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -405,22 +406,22 @@ margin: 10px 10px;
 .button-list {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 
 .footer {
   background-color: #fff;
-  border-top: 1px solid#DFE1E6;
+  padding-top: 70px;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid#DFE1E6 !important;
   filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
-}
 
-.footer-links ul li {
-  padding: 10px;
 }
 
 .button-get-in-touch {
