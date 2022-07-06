@@ -175,6 +175,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -358,5 +359,74 @@ body {
   line-height: 43px;
 }
 
+.contact-me {
+  background: #fff;
+  padding: 120px 10px 20px 10px;
+}
+
+.contact-me h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+}
+
+.contact-me form {
+  max-width: 400px;
+  padding-top: 40px;
+}
+
+.contact-me form ul {
+margin: 10px 10px;
+}
+
+.contact-me li input {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  margin-right:15px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 1px solid #DBD8D7;;
+}
+
+.contact-me textarea {
+  width: 100%;
+  padding: 10px 0 60px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: #FBF8F7;;
+  resize: none;
+  outline: none;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+
+.footer {
+  background-color: #fff;
+  padding-top: 70px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid#DFE1E6 !important;
+  filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
+
+}
+
+.button-get-in-touch {
+  display: flex;
+  justify-content: center;
+}
 }
 
