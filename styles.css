@@ -1,70 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-  
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 20px;
-  background-color: #e5e5e5;
-}
+
 
 /* For Mobile */
 
-@media screen and (max-width: 768px) {      
-.header {
-  background-color: #3C3A39;
-  height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: bold;
-  padding-top: 20px;
-}
-      
-.logo a{
-  color: white;
-  margin-left: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-}
+/* @media screen and (max-width: 768px) {       */
 
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  cursor: pointer;
-  height: 12px; 
-  margin-right: 20px;
-}
       
-.icon {
-  border: 2px solid #fff;
-  margin-bottom: 2px;
-  width: 16px;
-  border-radius: 1px;
-}
 
-.menu-icon-container {
-  margin-right: 20px;
-  width: 18px;
-  color: white;
-}
+      
 
 .headline-section {
   background-color: #1C1A19;
   height: 590px;
   display: flex;
   flex-direction: column;
+
+  /* align-items: center; */
+  justify-content: center;
   position: relative;
 }
 
@@ -80,13 +35,14 @@ body {
   padding: 0 20px;
   color: white;
   margin: 10px 0;
+  display: flex;
+  flex-direction: column;
   
 }
 
 .my-information h1{
   color: #FF6B00;
   font-family: 'Crete Round', serif;
-  padding-top: 124px;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -112,21 +68,29 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
   margin-left: 10px;  
   width: 250px;
-  height: 40px;
+
+  /* height: 40px; */
 }
 
 .my-works-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #fffefe;
+  padding: 50px;
+}
+
+.border-bottom {
+  border: 7px solid black;
+  width: 100%;
 }
 
 .recent-works {
   margin: 100px 20px 10px 20px;
   grid-column: span 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .recent-works h1{
@@ -135,9 +99,11 @@ body {
   font-size: 40px;
   line-height: 52px; 
   text-align: center;
-  margin-bottom: 50px;
-  padding: 30px;
-  border-bottom: 1px solid #212121;
+  margin-bottom: 20px;
+}
+
+.recent-works hr {
+  margin-bottom: 40px;
 }
 
 .recent-works img {
@@ -206,6 +172,12 @@ body {
 .works-categories li {
   padding: 10px 12px;
   border: 1px solid #8993A4;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  gap : '10px'
 }
 
 .first-project {
@@ -428,5 +400,80 @@ margin: 10px 10px;
   display: flex;
   justify-content: center;
 }
+
+
+
+.nav, .border-bottom {
+  display: none;
+}
+
+/* } */
+
+@media screen and (min-width : 768px) {
+  .hamburger, .bg-img {
+    display: none;
+  }
+
+  .nav, .border-bottom {
+    display: block; 
+  }
+
+  .my-information {
+    order: 2;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .my-info-para {
+    font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 82px;
+width: 50%;
+  }
+
+  .intro {
+    font-weight: 500;
+font-size: 32px;
+line-height: 44px;
+
+  }
+
+  .my-info-skill {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .headline-section {
+    height: 590px;
+    background-image: url(images/Illustration-header.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  .recent-works {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .recent-works h1 {
+    text-align: start;
+    order: 2;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 

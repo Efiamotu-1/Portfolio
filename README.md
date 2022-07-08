@@ -13,25 +13,30 @@ This is my portfolio website which shows my various projects and showcases my sk
 - HTML
 - Css
 - Javascript
-
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-
-
+- Linter
+- Github
 
 ## Authors
 
-👤 **Author1**
+👤 **Habeeb Musa Efiamotu**
 
 - GitHub: [@githubhandle](https://github.com/Efiamotu-1)
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/musa-habeeb)
+
+## Contributors
+
+👤 **Tahseen Zahra (owner)**
+
+- GitHub: [@githubhandle](https://github.com/tahseenzahra)
+- Twitter: [@twitterhandle](https://twitter.com/tahseen1zahra)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tahseenzahra/)
+
+👤 **Camilo Vela**
+
+- GitHub: [@Camilovelag](https://github.com/Camilovelag)
+- Twitter: [@camilovelag](https://twitter.com/camilovelag)
+- LinkedIn: [Camilo Vela](https://www.linkedin.com/in/camilovelag/)
 
 
 ## 🤝 Contributing
@@ -43,10 +48,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to microverse for the provision of the template.
 
 
 ## 📝 License
