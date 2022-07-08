@@ -185,7 +185,20 @@ padding: 10px 20px;
     letter-spacing: 0.03em;
     color: #fff;
     cursor: pointer;
+    animation-duration: 3s;
+    animation-name: btngrow;
   }
+
+  @keyframes btngrow {
+    from {
+      font-size: 24px;
+    }
+  
+    to {
+      font-size: 17px;
+    }
+  }
+
   
   .btn:hover {
   font-family: 'Inter', sans-serif;
