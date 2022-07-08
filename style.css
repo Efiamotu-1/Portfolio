@@ -630,6 +630,7 @@ color: #091E42;
 
     .lang-skills {
       align-items: flex-start;
+
       /* justify-content: flex-start; */
       margin: 0 auto;
     }
@@ -648,6 +649,7 @@ color: #091E42;
 
     .form {
         flex: 1.6;
+
         /* width: 80%; */
     }
 
