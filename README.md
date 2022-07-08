@@ -22,7 +22,7 @@ This is my portfolio website which shows my various projects and showcases my sk
 
 - GitHub: [@githubhandle](https://github.com/Efiamotu-1)
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/musa-habeeb)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/musa-habeeb/)
 
 ## Contributors
 
