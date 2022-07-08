@@ -31,6 +31,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+    transition: color 2s ease-out .5s;
+  }
+
+  .logo a:hover {
+    color: #d49c7b;
   }
 
   .nav {
@@ -69,10 +74,6 @@
   .social-media-links:hover {
     transform: rotateZ(360deg);
   }
-
-  
-
-
 
   .intro {
     font-family: 'Crete Round', serif;
