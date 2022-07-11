@@ -16,6 +16,10 @@ This is my portfolio website which shows my various projects and showcases my sk
 - Linter
 - Github
 
+## Portfolio Live Version 
+
+[Live Demo Link](https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/)
+
 ## Authors
 
 👤 **Habeeb Musa Efiamotu**
