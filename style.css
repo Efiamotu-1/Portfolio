@@ -209,15 +209,15 @@ padding: 10px 20px;
 
   
   .btn:hover {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #F55800;
-  background: #fff;
-  border: 1px solid #F55800;
-  animation-duration: 2s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #F55800;
+    background: #fff;
+    border: 1px solid #F55800;
+    animation-duration: 2s;
     animation-name: btngrow;
   }
   
@@ -225,10 +225,10 @@ padding: 10px 20px;
     background: #6b2d01;
     color: #fff;
     font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
   
   .btn:disabled {
@@ -329,6 +329,7 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
+
     /* color: #fff; */
 }
 
@@ -338,6 +339,7 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
     /* color: #fff; */
 
 }
@@ -355,6 +357,7 @@ letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+
     /* color: #fff; */
     padding: 10px;
     align-items: flex-end;
