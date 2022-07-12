@@ -7,7 +7,8 @@
     text-decoration: none;
     list-style-type: none;
   }
-    
+
+
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 20px;
@@ -26,7 +27,7 @@
   }
 
   .logo a{
-    color: white;
+    color: #fff;
     margin-left: 20px;
     font-weight: 700;
     font-size: 18px;
@@ -52,6 +53,7 @@
     margin-left: 30px;
   }
 
+  
 
   .headline-section {
     background-color: #1C1A19;
@@ -71,10 +73,6 @@
     transition: 3s 1s linear;
   }
 
-  .social-media-links:hover {
-    transform: rotateZ(360deg);
-  }
-
   .intro {
     font-family: 'Crete Round', serif;
     font-weight: 400;
@@ -82,6 +80,17 @@
     line-height: 64px;
     letter-spacing: 0.37px;
     color: #FF6B00;
+    animation: dropdown 3s 1s;
+  }
+
+  @keyframes dropdown {
+    from {
+      margin-top: -100%;
+    }
+  
+    to {
+      margin-top: 0;
+    }
   }
 
   .my-info-skill {
@@ -113,7 +122,7 @@
     
   }
 
-  .recent-works h1 {
+  .recent-works h3 {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 40px;
@@ -174,7 +183,7 @@ padding: 10px 20px;
 
 .btn {
     padding: 12px;
-    background: #FF6B00;
+    background: #6b2d01;
     border: none;
     margin-top: 10px ;
     font-family: 'Inter', sans-serif;
@@ -183,42 +192,43 @@ padding: 10px 20px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: rgb(255, 238, 238);
     cursor: pointer;
-    animation-duration: 3s;
-    animation-name: btngrow;
+    
   }
 
   @keyframes btngrow {
     from {
-      font-size: 24px;
+      font-size: 17px;
     }
   
     to {
-      font-size: 17px;
+      font-size: 20px;
     }
   }
 
   
   .btn:hover {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #F55800;
-  background: #FFF5E1;
-  border: 1px solid #F55800;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #F55800;
+    background: #fff;
+    border: 1px solid #F55800;
+    animation-duration: 2s;
+    animation-name: btngrow;
   }
   
   .btn:active {
-    background: #E05304;
+    background: #6b2d01;
     color: #fff;
     font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
   }
   
   .btn:disabled {
@@ -319,7 +329,8 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    color: #fff;
+
+    /* color: #fff; */
 }
 
 .project-desc {
@@ -328,7 +339,8 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+
+    /* color: #fff; */
 
 }
 
@@ -345,7 +357,8 @@ letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #fff;
+
+    /* color: #fff; */
     padding: 10px;
     align-items: flex-end;
     margin-bottom: 10px;
@@ -355,7 +368,7 @@ letter-spacing: 0.03em;
 
   .check-project {
 padding: 10px 20px;
-background: #FF6B00;
+background: #a04402;
 font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -506,6 +519,10 @@ color: #F4F5F7;
     outline: none;
 }
 
+label {
+  display: none;
+  }
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -578,12 +595,12 @@ color: #F4F5F7;
     }
 
     .recent-works{
-       grid-template-columns: 1fr 1fr;
+       grid-template-columns: 1.5fr 2.5fr;
        align-items: center;
        justify-content: start;
     }
 
-    .recent-works h1 {
+    .recent-works h3 {
         font-family: 'Crete Round', serif;
 font-style: normal;
 font-weight: 400;
@@ -596,7 +613,7 @@ color: #091E42;
 
     .recent-works hr {
         margin-bottom: 20px;
-        margin-left: -150px;
+   
     }
 
     .featured-project {
@@ -622,6 +639,7 @@ color: #091E42;
         margin: 50px auto;
         gap: 20px;
         grid-template-columns: repeat(3, 1fr);
+        color: #fff;
     }
 
    
