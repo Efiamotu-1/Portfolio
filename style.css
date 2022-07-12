@@ -8,9 +8,6 @@
     list-style-type: none;
   }
 
-label {
-  display: none;
-  }
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -517,6 +514,10 @@ color: #F4F5F7;
     resize: none;
     outline: none;
 }
+
+label {
+  display: none;
+  }
 
 .footer-links {
     display: flex;
