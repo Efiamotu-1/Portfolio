@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habeeb's Portfolio</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -19,11 +19,12 @@
   <img class="hamburger" src="images/icons/Icon-Menu.png" alt="hamburger">
 
 </a>
-       
+       <!-- Add id names to the # tag to link to the various part of the page -->
          <nav class="nav">
-        <ul>
+           <ul class="nav-active">
+          <li class="show-close-menu"><img src="images/icons/Icon.png" class="close-menu" alt="menu-icon"></li>
           <li>
-            <a href="#" class="nav-links">Portfolio</a>
+            <a href="#portfolio" class="nav-links">Portfolio</a>
           </li>
            <li>
             <a href="#" class="nav-links">About</a>
@@ -32,24 +33,13 @@
             <a href="#" class="nav-links">Contact</a>
           </li>
           <li>
-           <img src="images/icons/Icon-Mail.png" class="nav-links" alt="...mail">
+           <img src="images/icons/Icon-Mail.png" class="nav-links mail" alt="...mail">
           </li> 
         </ul>
       </nav>
    </header>
 
-   <section class="mobile-menu hide">
-      <div class="menu">
-        <div class="menu-img">
-          <img src="images/icons/Icon.png" class="close-menu" alt=""> 
-        </div>
-        <!-- Edit here add the id to link to the my works, about me and contact section -->
-        <h3 class="menu-text"> <a href="#"> Portfolio </a></h3>
-        <h3 class="menu-text"> <a href="#"> About</a></h3>
-        <h3 class="menu-text"> <a href="#"> Contact </a></h3>
 
-      </div>
-   </section>
 
 
    <section class="headline-section">
@@ -83,7 +73,7 @@
    <section class="my-works-section">
       <div class="recent-works">
         <!-- Add an id here to link to the menu -->
-        <h3 id="">My Recent Works</h3>
+        <h3 id="portfolio">My Recent Works</h3>
         <hr>
       </div>
       <div class="featured-project">  
@@ -310,6 +300,6 @@
    </section>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
