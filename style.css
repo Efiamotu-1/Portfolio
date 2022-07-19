@@ -5,7 +5,8 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
-    list-style-type: none;
+    list-style: none;
+    color: #fff;
   }
 
 
@@ -53,7 +54,59 @@
     margin-left: 30px;
   }
 
-  
+  .nav-link {
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .mobile-menu {
+    /* display: none; */
+    background: #3C3A39;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 30px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+.menu-img {
+  display: flex;
+  justify-content: end;
+}  
+
+  .close-menu {
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 18px;
+    margin-top: 20px;
+  }
+
+  .menu-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+  margin: 40px 0 0 0;
+  padding: 10px 30px;
+  border-bottom: 1px solid #6F6C6B;
+  }
 
   .headline-section {
     background-color: #1C1A19;
@@ -79,6 +132,7 @@
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
+    margin-bottom: 0;
     color: #FF6B00;
     animation: dropdown 3s 1s;
   }
@@ -182,20 +236,19 @@ padding: 10px 20px;
 }
 
 .btn {
-    padding: 12px;
-    background: #6b2d01;
-    border: none;
-    margin-top: 10px ;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgb(255, 238, 238);
-    cursor: pointer;
-    
-  }
+  padding: 12px;
+  background: #6b2d01;
+  border: none;
+  margin-top: 10px ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgb(255, 238, 238);
+  cursor: pointer;
+}
 
   @keyframes btngrow {
     from {
@@ -248,8 +301,7 @@ padding: 10px 20px;
     padding: 20px 0;
   }
 
-  .first-project {
-    background-image: url(images/clear-bg.png);
+  .project {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,66 +309,40 @@ padding: 10px 20px;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     align-items: flex-end;
+  }
+
+  .first-project {
+    background-image: url(images/clear-bg.png);
+    
    
 }
 
 .second-project {
     background-image: url(images/card-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+   
    
 }
 
 .third-project {
     background-image: url(images/card-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+
    
 }
 
 .fourth-project {
     background-image: url(images/card-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+   
    
 }
 
 .fifth-project {
     background-image: url(images/card-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
    
 }
 
 .sixth-project {
     background-image: url(images/card-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    
    
 }
 
