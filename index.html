@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habeeb's Portfolio</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -21,7 +21,7 @@
 </a>
        
          <nav class="nav">
-        <ul >
+        <ul>
           <li>
             <a href="#" class="nav-links">Portfolio</a>
           </li>
@@ -38,13 +38,26 @@
       </nav>
    </header>
 
+   <section class="mobile-menu hide">
+      <div class="menu">
+        <div class="menu-img">
+          <img src="images/icons/Icon.png" class="close-menu" alt=""> 
+        </div>
+        <!-- Edit here add the id to link to the my works, about me and contact section -->
+        <h3 class="menu-text"> <a href="#"> Portfolio </a></h3>
+        <h3 class="menu-text"> <a href="#"> About</a></h3>
+        <h3 class="menu-text"> <a href="#"> Contact </a></h3>
+
+      </div>
+   </section>
+
 
    <section class="headline-section">
      
 
     <div class="my-information">
        <h1 class="intro">Hey There. <br>I’m Habeeb</h1>
-       <h3 class="my-info-skill">I’am a Software Developer</h3>
+       <h2 class="my-info-skill">I’am a Software Developer</h2>
        <p class="my-info-para">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     </div>
       
@@ -69,7 +82,8 @@
 
    <section class="my-works-section">
       <div class="recent-works">
-        <h3>My Recent Works</h3>
+        <!-- Add an id here to link to the menu -->
+        <h3 id="">My Recent Works</h3>
         <hr>
       </div>
       <div class="featured-project">  
@@ -94,13 +108,13 @@
    </section>
 
    <section class="projects"> 
-    <div class="first-project"> 
+    <div class="first-project project"> 
               <button type="submit" class="check-project">
           See Project
         </button>
       </div>
 
-      <div class="second-project"> 
+      <div class="second-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -113,7 +127,7 @@
        
       </div>
 
-      <div class="third-project"> 
+      <div class="third-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -124,7 +138,7 @@
       
       </div>
 
-      <div class="fourth-project"> 
+      <div class="fourth-project project"> 
         <h4 class="project-title">Profesional Art  <br> Printing Data</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -134,7 +148,7 @@
         </ul>
       </div>
 
-      <div class="fifth-project"> 
+      <div class="fifth-project project"> 
         <h4 class="project-title">Profesional Art  <br> Printing Data</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -147,7 +161,7 @@
         </button> -->
       </div>
 
-      <div class="sixth-project"> 
+      <div class="sixth-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -163,7 +177,8 @@
 
   <section class="about-me">
    <div class="about">
-    <h2 class="about-me-title">About me</h2>
+        <!-- Add an id here to link to the menu -->
+    <h2 class="about-me-title" id="">About me</h2>
     <p class="about-me-info">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     <button type="button" class="btn button">
       Get My Resume
@@ -257,7 +272,8 @@
 </section>
 
 <footer class="footer">
-<section class="contact-me">
+        <!-- Add an id here to link to the menu -->
+<section class="contact-me" id="">
   <h3 class="contact-me-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
 
   <form action="https://formspree.io/f/mjvlqgpq" method="POST" class="form">
@@ -266,7 +282,7 @@
         <label for="email">Email</label>
         <input class="form-list" type="email" id="email" name="email" placeholder="Email Address" required>
         <label for="textarea">Comment</label>
-        <textarea class="form-textarea" name="message" id="textarea" maxlength="500" required>Enter text here</textarea>
+        <textarea class="form-textarea" name="message" id="textarea" placeholder="Enter Text Here" maxlength="500" required></textarea>
       <div class="button-get-in-touch">
         <button type="submit" class="btn">Get in touch</button>
       </div>
@@ -294,5 +310,6 @@
    </section>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
