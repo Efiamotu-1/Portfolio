@@ -82,11 +82,13 @@
   .menu {
     display: flex;
     flex-direction: column;
+    gap: 40px;
   }
 
 .menu-img {
   display: flex;
   justify-content: end;
+
 }  
 
   .close-menu {
@@ -103,9 +105,17 @@
   font-size: 32px;
   line-height: 44px;
   color: #FFF5E1;
-  margin: 40px 0 0 0;
-  padding: 10px 30px;
+  padding: 20px ;
+  display: block;
   border-bottom: 1px solid #6F6C6B;
+  }
+
+  .menu-text::after {
+    content: "";
+    width: 100%;
+    border-bottom: 3px solid #6F6C6B;
+
+
   }
 
   .headline-section {
@@ -566,13 +576,15 @@ label {
       }
 
       
-    .hamburger {
+    .hamburger, .show-close-menu {
         display: none;
     }
 
-    .nav {
+    .nav, .mail {
         display: block;
     }
+
+
 
     .headline-section {
     background-image: url(images/Illustration-header.png);
