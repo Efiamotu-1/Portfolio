@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habeeb's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
@@ -19,32 +19,31 @@
   <img class="hamburger" src="images/icons/Icon-Menu.png" alt="hamburger">
 
 </a>
-       
          <nav class="nav">
-        <ul >
+           <ul class="nav-active">
+          <li class="show-close-menu"><img src="images/icons/Icon.png" class="close-menu" alt="menu-icon"></li>
           <li>
-            <a href="#" class="nav-links">Portfolio</a>
+            <a href="#my-works" class="nav-links">Portfolio</a>
           </li>
            <li>
-            <a href="#" class="nav-links">About</a>
+            <a href="#about-me" class="nav-links">About</a>
           </li>
           <li>
-            <a href="#" class="nav-links">Contact</a>
+            <a href="#contact" class="nav-links">Contact</a>
           </li>
           <li>
-           <img src="images/icons/Icon-Mail.png" class="nav-links" alt="...mail">
+           <img src="images/icons/Icon-Mail.png" class="nav-links mail" alt="...mail">
           </li> 
         </ul>
       </nav>
    </header>
-
 
    <section class="headline-section">
      
 
     <div class="my-information">
        <h1 class="intro">Hey There. <br>I’m Habeeb</h1>
-       <h3 class="my-info-skill">I’am a Software Developer</h3>
+       <h2 class="my-info-skill">I’am a Software Developer</h2>
        <p class="my-info-para">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     </div>
       
@@ -67,8 +66,8 @@
        </ul>
    </section>
 
-   <section class="my-works-section">
-      <div class="recent-works">
+   <section class="my-works-section" id="my-works">
+      <div class="recent-works">   
         <h3>My Recent Works</h3>
         <hr>
       </div>
@@ -94,13 +93,13 @@
    </section>
 
    <section class="projects"> 
-    <div class="first-project"> 
+    <div class="first-project project"> 
               <button type="submit" class="check-project">
           See Project
         </button>
       </div>
 
-      <div class="second-project"> 
+      <div class="second-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">
           A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -113,7 +112,7 @@
        
       </div>
 
-      <div class="third-project"> 
+      <div class="third-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -124,7 +123,7 @@
       
       </div>
 
-      <div class="fourth-project"> 
+      <div class="fourth-project project"> 
         <h4 class="project-title">Profesional Art  <br> Printing Data</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -134,7 +133,7 @@
         </ul>
       </div>
 
-      <div class="fifth-project"> 
+      <div class="fifth-project project"> 
         <h4 class="project-title">Profesional Art  <br> Printing Data</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -147,7 +146,7 @@
         </button> -->
       </div>
 
-      <div class="sixth-project"> 
+      <div class="sixth-project project"> 
         <h4 class="project-title">Data Dashboard Healthcare</h4>
         <p class="project-desc">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
         <ul class="project-techs">
@@ -161,8 +160,9 @@
       
    </section>
 
-  <section class="about-me">
+  <section class="about-me" id="about-me">
    <div class="about">
+     
     <h2 class="about-me-title">About me</h2>
     <p class="about-me-info">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     <button type="button" class="btn button">
@@ -257,7 +257,8 @@
 </section>
 
 <footer class="footer">
-<section class="contact-me">
+        
+<section class="contact-me" id="contact">
   <h3 class="contact-me-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
 
   <form action="https://formspree.io/f/mjvlqgpq" method="POST" class="form">
@@ -266,7 +267,7 @@
         <label for="email">Email</label>
         <input class="form-list" type="email" id="email" name="email" placeholder="Email Address" required>
         <label for="textarea">Comment</label>
-        <textarea class="form-textarea" name="message" id="textarea" maxlength="500" required>Enter text here</textarea>
+        <textarea class="form-textarea" name="message" id="textarea" placeholder="Enter Text Here" maxlength="500" required></textarea>
       <div class="button-get-in-touch">
         <button type="submit" class="btn">Get in touch</button>
       </div>
@@ -294,5 +295,6 @@
    </section>
 </footer>
 
+<script src="js/menu.js"></script>
 </body>
 </html>

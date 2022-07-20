@@ -5,7 +5,8 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
-    list-style-type: none;
+    list-style: none;
+    color: #fff;
   }
 
 
@@ -53,11 +54,58 @@
     margin-left: 30px;
   }
 
-  
+  .nav-link {
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .mobile-menu {
+    /* display: none; */
+    background: #3C3A39;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 30px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+.menu-img {
+  display: flex;
+  justify-content: end;
+
+}  
+
+  .close-menu {
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 18px;
+    margin-top: 20px;
+  }
+
+  .menu-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+  padding: 20px ;
+  display: block;
+  border-bottom: 1px solid #6F6C6B;
+  }
+
 
   .headline-section {
     background-color: #1C1A19;
-    background-image: url(images/illustration-header-mobile.png);
+    background-image: url(../images/illustration-header-mobile.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     height: 590px;
@@ -79,6 +127,7 @@
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
+    margin-bottom: 0;
     color: #FF6B00;
     animation: dropdown 3s 1s;
   }
@@ -182,20 +231,19 @@ padding: 10px 20px;
 }
 
 .btn {
-    padding: 12px;
-    background: #6b2d01;
-    border: none;
-    margin-top: 10px ;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgb(255, 238, 238);
-    cursor: pointer;
-    
-  }
+  padding: 12px;
+  background: #6b2d01;
+  border: none;
+  margin-top: 10px ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgb(255, 238, 238);
+  cursor: pointer;
+}
 
   @keyframes btngrow {
     from {
@@ -248,8 +296,7 @@ padding: 10px 20px;
     padding: 20px 0;
   }
 
-  .first-project {
-    background-image: url(images/clear-bg.png);
+  .project {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -257,66 +304,40 @@ padding: 10px 20px;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     align-items: flex-end;
+  }
+
+  .first-project {
+    background-image: url(../images/clear-bg.png);
+    
    
 }
 
 .second-project {
-    background-image: url(images/card-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    background-image: url(../images/card-2.png);
+   
    
 }
 
 .third-project {
-    background-image: url(images/card-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    background-image: url(../images/card-3.png);
+
    
 }
 
 .fourth-project {
-    background-image: url(images/card-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    background-image: url(../images/card-bg.png);
+   
    
 }
 
 .fifth-project {
-    background-image: url(images/card-2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    background-image: url(../images/card-2.png);
    
 }
 
 .sixth-project {
-    background-image: url(images/card-3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: flex-end;
+    background-image: url(../images/card-3.png);
+    
    
 }
 
@@ -389,7 +410,7 @@ border: none;
   .about {
     height: 700px;
     padding: 0 20px;
-    background-image: url(images/illustration-about-me-mobile.png);
+    background-image: url(../images/illustration-about-me-mobile.png);
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: right bottom;
@@ -539,17 +560,22 @@ label {
         height: 72px;
       }
 
+      .mobile-menu {
+        display: none;
+      }
       
-    .hamburger {
+    .hamburger, .show-close-menu {
         display: none;
     }
 
-    .nav {
+    .nav, .mail {
         display: block;
     }
 
+
+
     .headline-section {
-    background-image: url(images/Illustration-header.png);
+    background-image: url(../images/Illustration-header.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -645,7 +671,7 @@ color: #091E42;
    
 
     .about {
-       background-image: url(images/illustration-about\ me@2x.png);
+       background-image: url(../images/illustration-about\ me@2x.png);
        background-position: center right;
        background-repeat: no-repeat;
        background-size: 50%;
