@@ -1,19 +1,19 @@
-const project = document.querySelector('.projects')
-const modal = document.querySelector('.modal-container')
-const modalContainer = document.querySelector('.modal-container')
+const project = document.querySelector('.projects');
+const modal = document.querySelector('.modal-container');
+const modalContainer = document.querySelector('.modal-container');
 // const closeModal = document.querySelector('#modal-close')
-const featuredProject = document.querySelector('.featured-project')
+const featuredProject = document.querySelector('.featured-project');
 
 const featuredProjectdata = {
-    name : 'Multi-Post Stories',
-    image : '../images/featured.png',
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    languages : [
-        'HTML',
-        'Css',
-        'Javascript'
-    ]
-}
+  name: 'Multi-Post Stories',
+  image: '../images/featured.png',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  languages: [
+    'HTML',
+    'Css',
+    'Javascript',
+  ],
+};
 
 featuredProject.innerHTML = `
 <div class="featured-image">
@@ -31,102 +31,99 @@ featuredProject.innerHTML = `
   See Projects         
 </button>
 </div>
-`
-
+`;
 
 const projectData = [
-    {
-         name : 'Data Dashboard Healthcare',
-         description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-         languages : [
-            'HTML',
-            'CSS',
-            'Javascript'
-         ]
-    },
-    {
-        name : 'Data Dashboard Healthcare',
-        description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-        languages : [
-           'HTML',
-           'CSS',
-           'Javascript'
-        ]
-   },
-    {
-    name : 'Data Dashboard Healthcare',
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages : [
-       'HTML',
-       'CSS',
-       'Javascript'
-    ]
-},
-{
-    name : 'Data Dashboard Healthcare',
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages : [
-       'HTML',
-       'CSS',
-       'Javascript'
-    ]
-},
-{
-    name : 'Data Dashboard Healthcare',
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages : [
-       'HTML',
-       'CSS',
-       'Javascript'
-    ]
-},
-{
-    name : 'Data Dashboard Healthcare',
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages : [
-       'HTML',
-       'CSS',
-       'Javascript'
-    ]
-}
-]
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+  },
+];
 
-project.innerHTML = projectData.map((project) => ( 
-    `<div class="second-project project"> 
+project.innerHTML = projectData.map((project) => (
+  `<div class="second-project project"> 
       <h4 class="project-title">${project.name}</h4>
       <p class="project-desc">
       ${project.description}
       </p>
       <ul class="project-techs">
-        ${project.languages.map((lang) => {
-            return `<li>${lang}</li>`
-        }).join('')}
+        ${project.languages.map((lang) => `<li>${lang}</li>`).join('')}
       </ul>
       <button type="submit" class="check-project">
       See Project
     </button>
     </div>
     `
-)).join('')
+)).join('');
 
-let modalCardData = [
-    {
-      name : 'Data Dashboard Healthcare ',
-      image : '../images/Snapshoot Portfolio.png',   
-      description : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi assumenda temporibus autem voluptates, nemo vero culpa optio quae? Tempora aliquam maxime tenetur iusto vero minima similique illum recusandae est deleniti!
+const modalCardData = [
+  {
+    name: 'Data Dashboard Healthcare ',
+    image: '../images/Snapshoot Portfolio.png',
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi assumenda temporibus autem voluptates, nemo vero culpa optio quae? Tempora aliquam maxime tenetur iusto vero minima similique illum recusandae est deleniti!
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sunt corrupti cupiditate quaerat quod assumenda tempore, eius temporibus officia error asperiores quasi! Tempora iusto quaerat nam voluptatibus, facere iure exercitationem.
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis harum laboriosam saepe? Placeat culpa quo dolorum soluta. Beatae, blanditiis saepe aliquam id alias iusto rem voluptatibus, provident doloremque hic odit?`,
-      languages : [
-        'HTML',
-        'Bootstrap',
-        'Ruby on Rails'
-      ],
-      
-    }
-] 
+    languages: [
+      'HTML',
+      'Bootstrap',
+      'Ruby on Rails',
+    ],
+
+  },
+];
 
 modal.innerHTML = modalCardData.map((modal) => (
-    `
+  `
     <div class="modal" id="modal">
     <div class="modal-header">
       <h2 id="modal-title">${modal.name} </h2>
@@ -153,20 +150,18 @@ modal.innerHTML = modalCardData.map((modal) => (
     </div>
   </div>
     `
-)).join('')
-const openModal = document.querySelectorAll('.button, .check-project')
-const container = document.querySelector('.container-element')
+)).join('');
+const openModal = document.querySelectorAll('.button, .check-project');
+// const container = document.querySelector('.container-element');
 openModal.forEach((open) => {
-    open.addEventListener('click', () => {
-      modalContainer.style.display = 'block';
-        // container.style.filter = 'blur(5px)'
-    })
-})
+  open.addEventListener('click', () => {
+    modalContainer.style.display = 'block';
+    // container.style.filter = 'blur(5px)'
+  });
+});
 
-const closeModal = document.querySelector('#modal-close')
+const closeModal = document.querySelector('#modal-close');
 closeModal.addEventListener('click', () => {
-    modalContainer.style.display = 'none';
-    // container.style.filter = 'none'
-
-
-})
+  modalContainer.style.display = 'none';
+  // container.style.filter = 'none'
+});
