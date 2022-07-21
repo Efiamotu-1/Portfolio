@@ -117,7 +117,7 @@
   .social-media-links{
     display: flex;  
     transform: rotateY(360deg);
-    transition: 3s 1s linear;
+    transition: 3s 2s linear;
   }
 
   .intro {

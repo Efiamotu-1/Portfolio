@@ -118,6 +118,8 @@ const modalCardData = [
       'Bootstrap',
       'Ruby on Rails',
     ],
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
 
   },
 ];
@@ -143,8 +145,8 @@ modal.innerHTML = modalCardData.map((modal) => (
          ${modal.description}
         </p>
         <div id="link-container" class="link-container">
-          <a id="live-link" class="button live-icon" href="#" target="new">See Live</a>
-          <a id="source-link" class="button source-icon" href="#" target="new">See Source</a>
+          <a id="live-link" class="button live-icon" href="${modal.liveUrl}" target="new">See Live</a>
+          <a id="source-link" class="button source-icon" href="${modal.sourceUrl}" target="new">See Source</a>
         </div>
       </div>
     </div>
