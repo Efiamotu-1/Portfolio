@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: #fff;
   }
 
 
@@ -227,8 +226,9 @@ font-weight: 500;
 font-size: 15px;
 line-height: 20px;
 color: #091E42;
-padding: 10px 20px;
+padding: 10px ;
 }
+
 
 .btn {
   padding: 12px;
@@ -292,7 +292,7 @@ padding: 10px 20px;
   .projects {
     display: grid;
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 0px;
     padding: 20px 0;
   }
 
@@ -302,8 +302,9 @@ padding: 10px 20px;
     background-size: cover;
     height: 400px;
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     align-items: flex-end;
+    color: #fff;
   }
 
   .first-project {
@@ -345,7 +346,7 @@ padding: 10px 20px;
 
 .project-title {
     font-family: 'Crete Round', serif;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0 20px;
     font-weight: 400;
     font-size: 32px;
@@ -398,6 +399,7 @@ line-height: 24px;
 letter-spacing: 0.03em;
 color: #FFF;
 border: none;
+cursor: pointer;
   }
 
   .about-me {
@@ -552,7 +554,123 @@ label {
     filter: invert(36%) sepia(14%) saturate(912%) hue-rotate(179deg) brightness(96%) contrast(89%);
   
   }
+
+  
+
+  .modal-container {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    margin: 0 30px;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #modal-title {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+  }
+
+  #modal-description {
+    font-family: 'Inter', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #344563;
+  }
+  .project-image {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal-close {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #67798e;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    cursor: pointer;
+  }
+
+  #live-link {
+    background-image: url(../images/icons/live-Icon.png);
+  }
+  
+  #source-link {
+    background-image: url(../images/icons/Vector.png);
+    
+  }
+  
+  #live-link,
+  #source-link {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .75rem 2.5rem .75rem .5rem;
+    background-position: 90%;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-color: #6b2d01;
+    color: #fff;
+    margin-right: 10px;
+
+  }
+
+  #live-link:hover {
+    background-image: url(../images/shapes/see-live-orange.svg);
+    color: #F55800;
+    background-color: #fff;
+    border: 1px solid #F55800;
+  }
+  
+  #source-link:hover {
+    background-image: url(../images/shapes/github-orange.svg);
+    color: #F55800;
+    background-color: #fff;
+    border: 1px solid #F55800;
+  }
+
+  #live-link:active {
+    background-image: url(../images/icons/live-Icon.png);
+    background-color: #6b2d01;
+    color: #fff;
+  }
+
+  #source-link:active {
+    background-image: url(../images/icons/Vector.png);
+    background-color: #6b2d01;
+    color: #fff;
+  }
+
   @media screen and (min-width: 768px) {
+    
     .header {
         padding: 0 100px;
         display: flex;
@@ -656,7 +774,7 @@ color: #091E42;
     }
 
     .featured-content {
-        flex: 1.5;
+        flex: 1;
         margin-top: 20px;
     }
 
@@ -668,7 +786,20 @@ color: #091E42;
         color: #fff;
     }
 
-   
+    .modal-content {
+      display: flex;
+      gap: 20px;
+    }
+
+    .featured-image {
+      flex: 1.5;
+    }
+
+    .content {
+      flex: 1;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
 
     .about {
        background-image: url(../images/illustration-about\ me@2x.png);
