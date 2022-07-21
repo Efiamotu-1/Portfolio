@@ -154,16 +154,16 @@ modal.innerHTML = modalCardData.map((modal) => (
     `
 )).join('');
 const openModal = document.querySelectorAll('.button, .check-project');
-// const container = document.querySelector('.container-element');
+const container = document.querySelector('.container-element');
 openModal.forEach((open) => {
   open.addEventListener('click', () => {
     modalContainer.style.display = 'block';
-    // container.style.filter = 'blur(5px)'
+    container.style.filter = 'blur(5px)';
   });
 });
 
 const closeModal = document.querySelector('#modal-close');
 closeModal.addEventListener('click', () => {
   modalContainer.style.display = 'none';
-  // container.style.filter = 'none'
+  container.style.filter = 'none';
 });
