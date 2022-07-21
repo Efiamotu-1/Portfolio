@@ -669,6 +669,20 @@ color: #344563;
     color: #fff;
   }
 
+  /* .form-error {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    color: #fff;
+  } */
+
+  
+  /* .error {
+    padding: 10px 20px;
+    margin: 10px auto;
+  } */
+
+
   @media screen and (min-width: 768px) {
     .header {
         padding: 0 100px;
