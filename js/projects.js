@@ -1,18 +1,22 @@
 const project = document.querySelector('.projects');
 const modal = document.querySelector('.modal-container');
-const modalContainer = document.querySelector('.modal-container');
-// const closeModal = document.querySelector('#modal-close')
 const featuredProject = document.querySelector('.featured-project');
+const container = document.querySelector('.container-element');
 
 const featuredProjectdata = {
+  id: 7,
   name: 'Multi-Post Stories',
   image: '../images/featured.png',
+  imageUrl: '../images/featured.png',
   description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   languages: [
     'HTML',
     'Css',
     'Javascript',
   ],
+  liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+  sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
+
 };
 
 featuredProject.innerHTML = `
@@ -27,7 +31,7 @@ featuredProject.innerHTML = `
 
   ${featuredProjectdata.languages.map((featLang) => `<li class="work-skills">${featLang}</li>`).join('')}
 </ul>
-<button class="btn button" type="button">
+<button class="btn button modal-button" id="${featuredProjectdata.id}"  type="button">
   See Projects         
 </button>
 </div>
@@ -35,6 +39,9 @@ featuredProject.innerHTML = `
 
 const projectData = [
   {
+    id: 1,
+    image: 'first',
+    imageUrl: '../images/clear-bg.png',
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     languages: [
@@ -42,81 +49,84 @@ const projectData = [
       'CSS',
       'Javascript',
     ],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages: [
-      'HTML',
-      'CSS',
-      'Javascript',
-    ],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages: [
-      'HTML',
-      'CSS',
-      'Javascript',
-    ],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages: [
-      'HTML',
-      'CSS',
-      'Javascript',
-    ],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages: [
-      'HTML',
-      'CSS',
-      'Javascript',
-    ],
-  },
-  {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    languages: [
-      'HTML',
-      'CSS',
-      'Javascript',
-    ],
-  },
-];
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
 
-project.innerHTML = projectData.map((project) => (
-  `<div class="second-project project"> 
-      <h4 class="project-title">${project.name}</h4>
-      <p class="project-desc">
-      ${project.description}
-      </p>
-      <ul class="project-techs">
-        ${project.languages.map((lang) => `<li>${lang}</li>`).join('')}
-      </ul>
-      <button type="submit" class="check-project">
-      See Project
-    </button>
-    </div>
-    `
-)).join('');
-
-const modalCardData = [
+  },
   {
-    name: 'Data Dashboard Healthcare ',
-    image: '../images/Snapshoot Portfolio.png',
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi assumenda temporibus autem voluptates, nemo vero culpa optio quae? Tempora aliquam maxime tenetur iusto vero minima similique illum recusandae est deleniti!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sunt corrupti cupiditate quaerat quod assumenda tempore, eius temporibus officia error asperiores quasi! Tempora iusto quaerat nam voluptatibus, facere iure exercitationem.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis harum laboriosam saepe? Placeat culpa quo dolorum soluta. Beatae, blanditiis saepe aliquam id alias iusto rem voluptatibus, provident doloremque hic odit?`,
+    id: 2,
+    image: 'second',
+    imageUrl: '../images/card-2.png',
+    name: 'Professional Art Printing Data',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     languages: [
       'HTML',
-      'Bootstrap',
-      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
+
+  },
+  {
+    id: 3,
+    name: 'Website Portfolio Project',
+    image: 'third',
+    imageUrl: '../images/card-3.png',
+
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
+
+  },
+  {
+    id: 4,
+    name: 'Data Dashboard Healthcare',
+    image: 'fourth',
+    imageUrl: '../images/card-bg.png',
+
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
+
+  },
+  {
+    id: 5,
+    name: 'Professional Art Printing Data',
+    image: 'fifth',
+    imageUrl: '../images/card-2.png',
+
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
+    ],
+    liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
+    sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
+
+  },
+  {
+    id: 6,
+    name: 'Website Portfolio Project',
+    image: 'sixth',
+    imageUrl: '../images/card-3.png',
+
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    languages: [
+      'HTML',
+      'CSS',
+      'Javascript',
     ],
     liveUrl: 'https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/',
     sourceUrl: 'https://github.com/Efiamotu-1/Portfolio-Mobile-Version-skeleton',
@@ -124,46 +134,68 @@ const modalCardData = [
   },
 ];
 
-modal.innerHTML = modalCardData.map((modal) => (
-  `
-    <div class="modal" id="modal">
-    <div class="modal-header">
-      <h2 id="modal-title">${modal.name} </h2>
-      <span class="modal-close" id ="modal-close">&times;</span>
+project.innerHTML = projectData.map((project) => (
+  `<div class="${project.image}-project project"> 
+      <h4 class="project-title">${project.name}</h4>
+      <p class="project-desc">
+      ${project.description}
+      </p>
+      <ul class="project-techs">
+        ${project.languages.map((lang) => `<li>${lang}</li>`).join('')}
+      </ul>
+      <button id=${project.id}  class="check-project modal-button">
+      See Project
+    </button>
     </div>
-    <div id="modal-languages">
-      <ul class="works-categories">
-        ${modal.languages.map((langSkill) => `<li class="work-skills">${langSkill}</li>`).join('')}     
-        </ul>
-    </div>
-    <div class="modal-content">
-      <div class="featured-image">
-        <img id="project-image" src="${modal.image}" alt="Project Preview">
-      </div>
-      <div class="content">
-        <p id="modal-description"> 
-         ${modal.description}
-        </p>
-        <div id="link-container" class="link-container">
-          <a id="live-link" class="button live-icon" href="${modal.liveUrl}" target="new">See Live</a>
-          <a id="source-link" class="button source-icon" href="${modal.sourceUrl}" target="new">See Source</a>
-        </div>
-      </div>
-    </div>
-  </div>
     `
 )).join('');
-const openModal = document.querySelectorAll('.button, .check-project');
-const container = document.querySelector('.container-element');
-openModal.forEach((open) => {
-  open.addEventListener('click', () => {
-    modalContainer.style.display = 'block';
-    container.style.filter = 'blur(5px)';
-  });
-});
 
-const closeModal = document.querySelector('#modal-close');
-closeModal.addEventListener('click', () => {
-  modalContainer.style.display = 'none';
-  container.style.filter = 'none';
+const newArray = [...projectData, featuredProjectdata];
+
+const openModal = (id) => {
+  container.style.filter = 'blur(5px)';
+  modal.style.display = 'block';
+
+  modal.innerHTML = `
+          <div class="modal" id="modal">
+          <div class="modal-header">
+            <h2 id="modal-title">${newArray[id - 1].name}</h2>
+            <span class="modal-close" id ="modal-close">&times;</span>
+          </div>
+          <div id="modal-languages">
+            <ul class="works-categories">
+              ${newArray[id - 1].languages.map((langSkill) => `<li class="work-skills">${langSkill}</li>`).join('')}     
+              </ul>
+          </div>
+          <div class="modal-content">
+            <div class="featured-image">
+              <img id="project-image" src="${newArray[id - 1].imageUrl}" alt="Project Preview">
+            </div>
+            <div class="content">
+              <p id="modal-description"> 
+               ${newArray[id - 1].description}
+              </p>
+              <div id="link-container" class="link-container">
+                <a id="live-link" class="button live-icon" href="${newArray[id - 1].liveUrl}" target="new">See Live</a>
+                <a id="source-link" class="button source-icon" href="${newArray[id - 1].sourceUrl}" target="new">See Source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          `;
+};
+
+const openModalButton = document.querySelectorAll('.modal-button');
+const buttonsArray = [...openModalButton];
+buttonsArray.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const { id } = e.target;
+
+    openModal(id);
+    const closeModal = document.getElementById('modal-close');
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+      container.style.filter = 'none';
+    });
+  });
 });
