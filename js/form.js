@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('data', data);
   }
 });
-// let userData = JSON.parse(localStorage.getItem('data'))
-// form.name.value = userData.name
-// form.email.value = userData.email
-// form.message.value = userData.message
+let userData = JSON.parse(localStorage.getItem('data'))
+form.name.value = userData.name
+form.email.value = userData.email
+form.message.value = userData.message
