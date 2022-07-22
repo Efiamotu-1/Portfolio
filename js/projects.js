@@ -150,8 +150,7 @@ project.innerHTML = projectData.map((project) => (
     `
 )).join('');
 
-const newArray = [featuredProjectdata, ...projectData, ];
-console.log(newArray)
+const newArray = [featuredProjectdata, ...projectData];
 const openModal = (id) => {
   container.style.filter = 'blur(5px)';
   modal.style.display = 'block';

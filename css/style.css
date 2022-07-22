@@ -560,6 +560,7 @@ label {
   .modal-container {
     display: none;
     position: fixed;
+
     /* height : 600px; */
     background-color: #fff;
     top: 5%;
@@ -671,7 +672,7 @@ color: #344563;
     display: flex;
     justify-content: center;
     background-color: crimson;
-    color: #fff;
+    color: white;
   }
 
   
