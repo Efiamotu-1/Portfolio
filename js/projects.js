@@ -4,7 +4,7 @@ const featuredProject = document.querySelector('.featured-project');
 const container = document.querySelector('.container-element');
 
 const featuredProjectdata = {
-  id: 7,
+  id: 0,
   name: 'Multi-Post Stories',
   image: '../images/featured.png',
   imageUrl: '../images/featured.png',
@@ -150,8 +150,8 @@ project.innerHTML = projectData.map((project) => (
     `
 )).join('');
 
-const newArray = [...projectData, featuredProjectdata];
-
+const newArray = [featuredProjectdata, ...projectData, ];
+console.log(newArray)
 const openModal = (id) => {
   container.style.filter = 'blur(5px)';
   modal.style.display = 'block';
@@ -159,25 +159,25 @@ const openModal = (id) => {
   modal.innerHTML = `
           <div class="modal" id="modal">
           <div class="modal-header">
-            <h2 id="modal-title">${newArray[id - 1].name}</h2>
+            <h2 id="modal-title">${newArray[id].name}</h2>
             <span class="modal-close" id ="modal-close">&times;</span>
           </div>
           <div id="modal-languages">
             <ul class="works-categories">
-              ${newArray[id - 1].languages.map((langSkill) => `<li class="work-skills">${langSkill}</li>`).join('')}     
+              ${newArray[id].languages.map((langSkill) => `<li class="work-skills">${langSkill}</li>`).join('')}     
               </ul>
           </div>
           <div class="modal-content">
             <div class="featured-image">
-              <img id="project-image" src="${newArray[id - 1].imageUrl}" alt="Project Preview">
+              <img id="project-image" src="${newArray[id].imageUrl}" alt="Project Preview">
             </div>
             <div class="content">
               <p id="modal-description"> 
-               ${newArray[id - 1].description}
+               ${newArray[id].description}
               </p>
               <div id="link-container" class="link-container">
-                <a id="live-link" class="button live-icon" href="${newArray[id - 1].liveUrl}" target="new">See Live</a>
-                <a id="source-link" class="button source-icon" href="${newArray[id - 1].sourceUrl}" target="new">See Source</a>
+                <a id="live-link" class="button live-icon" href="${newArray[id].liveUrl}" target="new">See Live</a>
+                <a id="source-link" class="button source-icon" href="${newArray[id].sourceUrl}" target="new">See Source</a>
               </div>
             </div>
           </div>
