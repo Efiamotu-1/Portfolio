@@ -560,8 +560,7 @@ label {
   .modal-container {
     display: none;
     position: fixed;
-
-    /* height : 600px; */
+    height : 600px;
     background-color: #fff;
     top: 5%;
     overflow-y: auto;
@@ -668,18 +667,18 @@ color: #344563;
     color: #fff;
   }
 
-  .form-error {
+  /* .form-error {
     display: flex;
     justify-content: center;
     background-color: crimson;
-    color: white;
-  }
+    color: #fff;
+  } */
 
   
-  .error {
+  /* .error {
     padding: 10px 20px;
     margin: 10px auto;
-  }
+  } */
 
 
   @media screen and (min-width: 768px) {
