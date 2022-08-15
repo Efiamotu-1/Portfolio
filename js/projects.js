@@ -8,7 +8,7 @@ const featuredProjectdata = {
   name: 'Roll A Dice',
   image: './images/roll-dice.png',
   imageUrl: './images/roll-dice.png',
-  description: 'This project features a dice game between two players. Each players is allowed to roll a dice as many times as possible to win the game and the player who first reaches a score above 100 wins the game, However if a player rolls 1, his total score reverts to 0 and the game shifts to the next player who gets to roll next and try his luck, Each player can also hold to save and protect his score. The game can also be refresh to begin a new round. Once a player wins the game his tab displays a dark background.',
+  description: 'This project features a dice game between two players. Each player is allowed to roll a dice as many times as possible to win the game and the player who first reaches a score above 100 wins the game, However if a player rolls 1, his total score reverts to 0 and the turn shifts to the next player who gets to roll next and try his luck, Each player can also hold to save and protect his score. The game can also be refreshed to begin a new round. Once a player wins the game his tab displays a dark background.',
   languages: [
     'HTML',
     'Css',
