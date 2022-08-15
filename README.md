@@ -28,21 +28,6 @@ This is my portfolio website which shows my various projects and showcases my sk
 - Twitter: [@twitterhandle](https://twitter.com/EFYAMOTU)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/musa-habeeb/)
 
-## Contributors
-
-👤 **Tahseen Zahra (owner)**
-
-- GitHub: [@githubhandle](https://github.com/tahseenzahra)
-- Twitter: [@twitterhandle](https://twitter.com/tahseen1zahra)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tahseenzahra/)
-
-👤 **Camilo Vela**
-
-- GitHub: [@Camilovelag](https://github.com/Camilovelag)
-- Twitter: [@camilovelag](https://twitter.com/camilovelag)
-- LinkedIn: [Camilo Vela](https://www.linkedin.com/in/camilovelag/)
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

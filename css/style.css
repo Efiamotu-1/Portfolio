@@ -300,91 +300,54 @@ padding: 10px ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
     height: 400px;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1fr);
     align-items: flex-end;
     color: #fff;
+    cursor: pointer;
   }
 
+  .project:hover {
+    border: 3px solid #eee;
+  }
+  
   .first-project {
-    background-image: url(../images/clear-bg.png);
+    background-image: url(../images/wa.png);
     
    
 }
 
 .second-project {
-    background-image: url(../images/card-2.png);
-   
-   
+  background-image: url(../images/lmun.png);
+    
 }
 
 .third-project {
-    background-image: url(../images/card-3.png);
+    background-image: url(../images/todo1.png);
 
    
 }
 
 .fourth-project {
-    background-image: url(../images/card-bg.png);
+    background-image: url(../images/bk.png);
    
    
 }
 
 .fifth-project {
-    background-image: url(../images/card-2.png);
+    background-image: url(../images/guess.png);
    
 }
 
 .sixth-project {
-    background-image: url(../images/card-3.png);
+    background-image: url(../images/iq.png);
     
    
 }
 
 
-
-.project-title {
-    font-family: 'Crete Round', serif;
-    margin-top: 100px;
-    padding: 0 20px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-
-    /* color: #fff; */
-}
-
-.project-desc {
-    font-family: 'Inter',sans-serif;
-    padding: 0 20px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-
-    /* color: #fff; */
-
-}
-
-.project-techs {
-    display: flex;
-    gap: 20px;
-    padding: 0 20px;
-
-}
-
-.project-techs li {
-    background:  rgba(255, 255, 255, 0.24);
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-
-    /* color: #fff; */
-    padding: 10px;
-    align-items: flex-end;
-    margin-bottom: 10px;
-}
 
 
 
