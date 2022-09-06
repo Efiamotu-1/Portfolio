@@ -128,16 +128,19 @@
     letter-spacing: 0.37px;
     margin-bottom: 0;
     color: #FF6B00;
-    animation: dropdown 3s 1s backwards;
+    animation-name: dropdown; 
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
       
   }
 
   @keyframes dropdown {
-    from {
+    0% {
       margin-top: -100%;
     }
   
-    to {
+    100% {
       margin-top: 0;
     }
   }
