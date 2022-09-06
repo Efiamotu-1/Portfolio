@@ -130,7 +130,6 @@
     color: #FF6B00;
     animation-name: dropdown; 
     animation-duration: 3s;
-    animation-delay: 1s;
     animation-fill-mode: backwards;
       
   }
