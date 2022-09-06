@@ -128,7 +128,8 @@
     letter-spacing: 0.37px;
     margin-bottom: 0;
     color: #FF6B00;
-    animation: dropdown 3s 1s;
+    animation: dropdown 3s 1s backwards;
+      
   }
 
   @keyframes dropdown {
