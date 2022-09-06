@@ -18,7 +18,7 @@ This is my portfolio website which shows my various projects and showcases my sk
 
 ## Portfolio Live Version 
 
-[Live Demo Link](https://efiamotu-1.github.io/Portfolio-Mobile-Version-skeleton/)
+[Live Demo Link](https://efiamotu-1.github.io/Portfolio/)
 
 ## Authors
 
