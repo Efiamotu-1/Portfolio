@@ -41,7 +41,7 @@ const projectData = [
   {
     id: 1,
     image: 'first',
-    imageUrl: '../images/wa.png',
+    imageUrl: './images/wa.png',
     name: 'Weather App',
     description: "This project is a weather app that displays weather information for different cities. these information is generated using data from accu weather api, i.e this website employs the use of api's to populate its contents and display weather information about a particular city",
     languages: [
@@ -57,7 +57,7 @@ const projectData = [
   {
     id: 2,
     image: 'second',
-    imageUrl: '../images/lmun.png',
+    imageUrl: './images/lmun.png',
     name: 'Lagos Model United Nations(LMUN)',
     description: 'This website gives information about the prestigious lagos model united nation which is a simulation of the united nations General Assembly. It is an event attended by thousands of university students from different tertiary institutions within and outside africa.',
     languages: [
@@ -73,7 +73,7 @@ const projectData = [
     id: 3,
     name: 'Todo List App',
     image: 'third',
-    imageUrl: '../images/todo1.png',
+    imageUrl: './images/todo1.png',
 
     description: 'This is a todo list app which can be very useful in setting goals and objectives for the day or week. It can also serve as a reminder for completion of tasks. This app not only sets out your todos but also gives you the opportunity to search for todos by filtering the todos with provided search words',
     languages: [
@@ -89,7 +89,7 @@ const projectData = [
     id: 4,
     name: 'Bankist App',
     image: 'fourth',
-    imageUrl: '../images/bk.png',
+    imageUrl: './images/bk.png',
 
     description: 'The Website was built fully functional with javascript, it uses dom manipulation to update the html dynamically with effects that makes the whole website interactive and user friendly',
     languages: [
@@ -104,7 +104,7 @@ const projectData = [
   {
     id: 5,
     image: 'fifth',
-    imageUrl: '../images/guess.png',
+    imageUrl: './images/guess.png',
     name: 'Guess My Number',
     description: 'This project is a game of guessing a random number between 1 & 20, Correct number shows a hint detailing whether the guess is too high or too low depending on the closeness of the guess to the randomly generated number. Each guesser has 20 attempts and his fastest attempt is saved. The again button resets the game so that a new guess can begin',
     languages: [
@@ -120,7 +120,7 @@ const projectData = [
     id: 6,
     name: 'Interactive Quiz App',
     image: 'sixth',
-    imageUrl: '../images/iq.png',
+    imageUrl: './images/iq.png',
 
     description: 'This project is an interactive Quiz website where users are required to answer a number of questions to test their knowledge.',
     languages: [
