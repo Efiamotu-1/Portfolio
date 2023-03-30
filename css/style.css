@@ -59,7 +59,6 @@
   }
 
   .mobile-menu {
-    /* display: none; */
     background: #3C3A39;
     position: fixed;
     top: 0;
@@ -305,15 +304,17 @@ padding: 10px ;
     background-size: cover;
     object-fit: cover;
     height: 400px;
+    margin: 1rem 0;
     display: grid;
     grid-template-rows: repeat(1fr);
     align-items: flex-end;
-    color: #fff;
+    color: blue;
     cursor: pointer;
   }
 
   .project:hover {
     border: 3px solid #eee;
+    transform: scale(1.1);
   }
   
   .first-project {
@@ -419,8 +420,6 @@ color: #F4F5F7;
     display: grid;
     grid-template-rows: auto;
     padding: 50px 0;
-
-    /* margin: 0 auto; */
     color: #fff;
     gap: 20px;
 
@@ -728,8 +727,6 @@ font-weight: 400;
 font-size: 40px;
 line-height: 52px;
 color: #091E42;
-
-        /* justify-self: end; */
     }
 
     .recent-works hr {
@@ -757,9 +754,13 @@ color: #091E42;
     .projects {
         width: 1000px;
         margin: 50px auto;
-        gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
         color: #fff;
+    }
+
+    .project {
+      margin: 0;
     }
 
     .modal-content {
@@ -798,8 +799,6 @@ color: #091E42;
 
     .lang-skills {
       align-items: flex-start;
-
-      /* justify-content: flex-start; */
       margin: 0 auto;
     }
 
@@ -817,8 +816,6 @@ color: #091E42;
 
     .form {
         flex: 1.6;
-
-        /* width: 80%; */
     }
 
     .footer-links {
