@@ -32,7 +32,7 @@ featuredProject.innerHTML = `
   ${featuredProjectdata.languages.map((featLang) => `<li class="work-skills">${featLang}</li>`).join('')}
 </ul>
 <button class="btn button modal-button" id="${featuredProjectdata.id}"  type="button">
-  See Projects         
+  See Project         
 </button>
 </div>
 `;

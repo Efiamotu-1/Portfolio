@@ -23,6 +23,8 @@
     justify-content: space-between;
     font-weight: bold;
     padding: 20px 40px 0 20px;
+    position: sticky;
+    top: 0
   
   }
 
@@ -106,7 +108,7 @@
     background-image: url(../images/illustration-header-mobile.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: 590px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -154,6 +156,7 @@
   .my-info-para {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    width: 80%;
     font-size: 16px;
     line-height: 24px;
     color: #FFF;
@@ -186,6 +189,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 90%;
+    margin: auto;
   }
 
   .featured-image img{
@@ -296,6 +301,8 @@ padding: 10px ;
     grid-template-rows: auto;
     gap: 0;
     padding: 20px 0;
+    width: 90%;
+    margin: auto;
   }
 
   .project {
@@ -469,6 +476,7 @@ color: #F4F5F7;
 .contact-me {
     display: flex;
     flex-direction: column;
+    width: 90%;
     gap: 20px;
 }
 
@@ -669,7 +677,7 @@ color: #344563;
 
 
     .headline-section {
-    background-image: url(../images/Illustration-header.png);
+      background-image: url(../images/illustration-header-mobile.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -701,7 +709,7 @@ color: #FFF;
 
     .my-info-para {
         font-family: 'Inter', sans-serif;
-        width: 50%;
+        width: 80%;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -737,8 +745,8 @@ color: #091E42;
     .featured-project {
         display: flex;
         flex-direction: row;
-        width: 1000px;
-        margin: 0 auto;
+        width: 90%;
+        margin: auto;
       }
       
       .featured-image {
@@ -752,8 +760,8 @@ color: #091E42;
     }
 
     .projects {
-        width: 1000px;
-        margin: 50px auto;
+        width: 70%;
+        margin: auto;
         gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
         color: #fff;
@@ -805,7 +813,6 @@ color: #091E42;
     .contact-me {
         flex-direction: row;
         gap: 20px;
-        width: 1000px;
         margin: 0 auto;
     }
 
@@ -822,4 +829,21 @@ color: #091E42;
         margin-top: 50px;
     }
    
+  }
+
+  @media screen and (min-width: 900px) {
+    .headline-section {
+    background-image: url(../images/Illustration-header.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+        
+    }
+
+    .my-info-para {
+      width: 50%;
+    }
   }
