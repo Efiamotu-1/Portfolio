@@ -307,7 +307,7 @@ padding: 10px ;
 
   .project {
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top left;
     background-size: cover;
     object-fit: cover;
     height: 400px;
@@ -325,7 +325,7 @@ padding: 10px ;
   }
   
   .first-project {
-    background-image: url(../images/wa.png);
+    background-image: url(../images/tva.png);
     
    
 }
@@ -336,24 +336,24 @@ padding: 10px ;
 }
 
 .third-project {
-    background-image: url(../images/todo1.png);
+    background-image: url(../images/todo-1.png);
 
    
 }
 
 .fourth-project {
-    background-image: url(../images/bk.png);
+    background-image: url(../images/car-det.png);
    
    
 }
 
 .fifth-project {
-    background-image: url(../images/guess.png);
+    background-image: url(../images/bookstore-cms.png);
    
 }
 
 .sixth-project {
-    background-image: url(../images/iq.png);
+    background-image: url(../images/awe-book.png);
     
    
 }
@@ -760,11 +760,12 @@ color: #091E42;
     }
 
     .projects {
-        width: 70%;
+        width: 80%;
         margin: auto;
         gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
         color: #fff;
+
     }
 
     .project {
